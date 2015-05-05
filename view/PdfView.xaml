@@ -6,11 +6,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="800">
     <Grid x:Name="LayoutRoot" Background="White">
-        <Menu HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="800">
+        <Menu Height="50" VerticalAlignment="Top" RenderOptions.BitmapScalingMode="NearestNeighbor">
             <Button Content="Open " Height="40" Width="80" Click="openFileDialog_Click"/>
             <Button Content="Zoom In" Height="40" Width="80"/>
             <Button Content="Zoom out" Height="40" Width="80"/>
             <Button Content="Change user" Height="40" Width="80" Click="changeUser_Click"/>
         </Menu>
+        <Image x:Name="imageView" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="Fill" VerticalAlignment="Top" Margin="0,50,0,0"/>
     </Grid>
 </UserControl>
